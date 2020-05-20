@@ -1,9 +1,14 @@
 ## library() calls go here
-library(conflicted)
-library(dotenv)
-library(dplyr)
-library(drake)
-library(fs)
-library(readr)
+suppressMessages({
+  library(conflicted)
+  library(curl)
+  library(dotenv)
+  library(dplyr)
+  library(drake)
+  library(fs)
+  library(httr)
+  library(R.utils)
+  library(readr)
+})
 
 conflict_prefer("filter", "dplyr")
